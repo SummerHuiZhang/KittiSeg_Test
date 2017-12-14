@@ -10,7 +10,8 @@ Initialize all submodules:
  `git submodule update --init --recursive`
 ## Manage Our Data
 ### transfer image format
-We have wrote a convert.launch to transfer rosbag  to series of *.jpg with help of Qinghai and got 7507 gray photos from HKUST to Kengkou with a Panoramic camera. Please see [ftp](ftp://ftp.ram-lab.com/write/zhanghui/) for detail.
+We have wrote a convert.launch to transfer rosbag  to series of *.jpg with help of Qinghai and got 7507 gray photos from HKUST to Kengkou with a Panoramic camera. Please see <a href="ftp://ftp.ram-lab.com/write/zhanghui/">Our ftp</a> for detail.
+
 ### labelme
 I picked about 60 images every hundred to mark label in [labelme](http://labelme.csail.mit.edu/Release3.0/). The labelme will cover road as red and background as black automatically, so don’t forget to change corresponding RGB value in **KittiSeg/hypes/KittiSeg.json**. The default is `road_color: [255,0,255]` and `background: [255,0,0]` and change them into `road_color: [255,0,0]` and `background: [0,0,0]`. Otherwise, you may get totally black photo after 5 hours training. 
 
