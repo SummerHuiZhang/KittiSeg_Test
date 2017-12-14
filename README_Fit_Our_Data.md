@@ -1,11 +1,11 @@
 
 # Run KittiSeg with Our Data
-##Clone repository
+## Clone repository
 Clone:
 `git clone https://github.com/MarvinTeichmann/KittiSeg.git`
 Initialize all submodules:
  `git submodule update --init --recursive`
-##Manage Our Data
+## Manage Our Data
 ### transfer image format
 We have wrote a convert.launch to transfer rosbag  to series of *.jpg with help of Qinghai and got 7507 gray photos from HKUST to Kengkou with a Panoramic camera. Please see [ftp](ftp://ftp.ram-lab.com/write/zhanghui/) for detail.
 ### labelme
