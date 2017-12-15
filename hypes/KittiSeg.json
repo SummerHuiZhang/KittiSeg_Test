@@ -9,10 +9,10 @@
   "path": ["../incl"],
 
   "data": {
-    "train_file" : "data_road/train3_DIY.txt",
-    "val_file" : "data_road/val3_DIY.txt",
-    "road_color" : [255,0,0],                                  
-    "background_color" : [0,0,0],
+    "train_file" : "data_road/train3_DIY.txt",           #change path to our own image file 
+    "val_file" : "data_road/val3_DIY.txt",      #change path to our own image path
+    "road_color" : [255,0,0],               #road red                     
+    "background_color" : [0,0,0],            #background black
     "vgg_url": "ftp://mi.eng.cam.ac.uk/pub/mttt2/models/vgg16.npy",
     "kitti_url": ""
   },
@@ -48,9 +48,9 @@
 
   "logging": {
     "display_iter": 20,
-    "eval_iter": 10,
-    "write_iter": 100,
-    "save_iter": 2000,
+    "eval_iter": 10,            
+    "write_iter": 100,                    
+    "save_iter": 2000,              #save result after training for 2000 times
     "image_iter":20
   },
 
